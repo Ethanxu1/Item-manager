@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Manager</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <ul id="nav-links">
+            <li class="task-pg">Tasks</li>
+            <li class="note-pg">Notes</li>
+            <li class="pass-pg">Passwords</li>
+            <li class="tips-pg">Management Tips</li>
+        </ul>
+    </nav>
+    <!-- Task Page -->
+    <div id="task-pg-container">
+        <span>Tasks</span>
+        <img src="assets/Todo_logo.png" alt="Todo logo" width="20px">
+        <audio src="./assets/ClickSound.mp3" id="task-audio"></audio>
+        <ul id="tasks"></ul>
+        <form action="." class="add-task">
+            <div class="date-field">
+                <label for="task-start-date">Start Date: </label>
+                <input type="date" name="task-start-date" id="task-start-date">
+            </div>
+            <div class="date-field">
+                <label for="task-finish-date">Finish Date: </label>
+                <input type="date" name="task-finish-date" id="task-finish-date">
+            </div>
+            <div class="subject-field">
+                <label for="task-subject">Subject: </label>
+                <input type="text" name="task-subject" id="task-subject">
+            </div>
+            <div class="body-field">
+                <label for="task-body">Task: </label>
+                <input type="text" name="task-body" id="task-body">
+            </div>
+            <input type="submit" value="Add Task" class="add-task-btn">
+        </form>
+    </div>
+    <!-- Notes Page-->
+    <div id="notes-pg-container">
+        <span>Notes</span>
+        <img src="./assets/Notes_logo.png" alt="" width="20px">
+        <audio src="./assets/ClickSound.mp3" id="note-audio"></audio>
+        <ul id="notes"></ul>
+        <form action="." class="add-note">
+            <div class="date-field">
+                <label for="date">Date: </label>
+                <input type="date" name="note-date" id="note-date">
+            </div>
+            <div class="subject-field">
+                <label for="note-subject">Subject: </label>
+                <input type="text" name="note-subject" id="note-subject">
+            </div>
+            <div class="body-field">
+                <label for="note-body">Note: </label>
+                <input type="text" name="note-body" id="note-body">
+            </div>
+            <input type="submit" value="Add Note" class="add-note-btn">
+        </form>
+    </div>
+    <div id="pass-pg-container">
+        <span>Passwords</span>
+        <img src="./assets/Password_logo.png" alt="" width="20px">
+        <audio src="./assets/ClickSound.mp3" id="pass-audio"></audio>
+        <ul id="passwords"></ul>
+        <form action="." class="add-pass">
+            <div class="site-field">
+                <label for="site">For</label>
+                <input type="text" name="site" id="site">
+            </div>
+            <div class="username-field">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="password-field">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+            </div>
+            <input type="submit" value="Add Password" class="add-pass-btn">
+        </form>
+    </div>
+    <!-- Tips Page -->
+    <div id="tips-pg-container">
+        <h1>Tips</h1>
+        <img src="./assets/Task_Management.png" alt="">
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
