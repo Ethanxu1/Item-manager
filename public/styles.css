@@ -1,0 +1,69 @@
+.date-field, .subject-field, .body-field, .site-field, .username-field, .password-field {
+    margin: 5px;
+}
+#task-pg-container {
+    /* position: fixed; */
+    /* background-color: red; */
+}
+.add-task {
+    /* display: flex;  */
+    /* flex-direction: column; */
+}
+#notes-pg-container {
+    /* position: fixed; */
+    /* background-color: lightgreen;; */
+}
+#pass-pg-container {
+    /* position: fixed; */
+    /* background-color: lightblue; */
+}
+#tips-pg-container {
+    /* position: fixed; */
+    /* background-color: yellow; */
+}
+#nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.task-pg:hover {
+    cursor: pointer;
+}
+.note-pg:hover {
+    cursor: pointer;
+}
+.pass-pg:hover {
+    cursor: pointer;
+}
+.tips-pg:hover {
+    cursor: pointer;
+}
+.password {
+    
+}
+
+#tasks, #notes, #passwords {
+    padding: 0px;
+}
+
+#tasks li, #notes li, #passwords li {
+    padding: 6px 10px;
+    background-color: #eee;
+    margin: 10px auto;
+    list-style-type: none;
+}
+#tasks h4, #notes h4, #passwords h4 {
+    color: #ff0aa7;
+    margin: 0;
+    text-transform: capitalize;
+}
+#tasks p, #notes p, #passwords p {
+    color: #333;
+    margin: 8px 0 0;
+}
+
+.add-pass {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
